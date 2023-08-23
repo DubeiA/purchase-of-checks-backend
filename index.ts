@@ -1,6 +1,6 @@
 import express from "express";
 import db from "./src/models";
-// import { products } from "./src/seeders/products";
+
 import { CustomError } from "./src/types/ICustomError";
 const productRouter = require("./src/routes/products");
 
