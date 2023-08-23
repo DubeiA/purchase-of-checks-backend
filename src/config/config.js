@@ -5,21 +5,22 @@ module.exports = {
     username: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: process.env.DB_NAME,
-    host: "127.0.0.1",
+
+    host: "10.0.2.2",
     dialect: "mariadb",
   },
   test: {
     username: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: process.env.DB_NAME,
-    host: "127.0.0.1",
+    host: "10.0.2.2",
     dialect: "mariadb",
   },
   production: {
     username: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: process.env.DB_NAME,
-    host: "127.0.0.1",
+    host: "10.0.2.2",
     dialect: "mariadb",
   },
 };
