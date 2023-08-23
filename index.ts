@@ -5,7 +5,7 @@ import { CustomError } from "./src/types/ICustomError";
 const productRouter = require("./src/routes/products");
 
 const app = express();
-const port = process.env.PORT || 3307;
+const port = process.env.PORT || 4000;
 
 app.use(express.json());
 
