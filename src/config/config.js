@@ -2,28 +2,28 @@ require("dotenv").config();
 
 module.exports = {
   development: {
-    username: "root",
-    password: "Wj6scdK3kcuae23eYggsBHbgLP2d4zPv",
-    database: "calculation",
-    host: "dpg-cjj283fjbvhs73f1sp90-a.oregon-postgres.render.com",
-    dialect: "postgres",
-    protocol: "postgres",
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    dialect: process.env.DB_PROTOCOL,
+    protocol: process.env.DB_PROTOCOL,
     dialectOptions: {
-      ssl: true
+      ssl: true,
     },
   },
   test: {
-    username: "root",
-    password: "Wj6scdK3kcuae23eYggsBHbgLP2d4zPv",
-    database: "calculation",
-    host: "dpg-cjj283fjbvhs73f1sp90-a",
-    dialect: "postgres",
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    dialect: process.env.DB_PROTOCOL,
   },
   production: {
-    username: "root",
-    password: "Wj6scdK3kcuae23eYggsBHbgLP2d4zPv",
-    database: "calculation",
-    host: "dpg-cjj283fjbvhs73f1sp90-a",
-    dialect: "postgres",
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    dialect: process.env.DB_PROTOCOL,
   },
 };
