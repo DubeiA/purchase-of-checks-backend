@@ -8,7 +8,9 @@ module.exports = {
     host: "dpg-cjj283fjbvhs73f1sp90-a.oregon-postgres.render.com",
     dialect: "postgres",
     protocol: "postgres",
-    dialectOptions: {},
+    dialectOptions: {
+      ssl: true
+    },
   },
   test: {
     username: "root",
