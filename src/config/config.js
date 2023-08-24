@@ -7,6 +7,8 @@ module.exports = {
     database: "calculation",
     host: "dpg-cjj283fjbvhs73f1sp90-a.oregon-postgres.render.com",
     dialect: "postgres",
+    protocol: "postgres",
+    dialectOptions: {},
   },
   test: {
     username: "root",
