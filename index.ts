@@ -1,14 +1,16 @@
 import express from "express";
 import db from "./src/models";
+
 // import { products } from "./src/seeders/products";
 import { CustomError } from "./src/types/ICustomError";
+const cors = require("cors");
 const productRouter = require("./src/routes/products");
 
 const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
-
+app.use(cors());
 app.use("/", productRouter);
 
 app.use((req: express.Request, res: express.Response) => {
