@@ -70,7 +70,11 @@ const modifyProductInReceipt = async (req: Request, res: Response) => {
     })
   );
 
-  return res.status(200).json(updatedProducts);
+  const filteredProducts = updatedProducts
+    .flat()
+    .filter((product) => product !== null);
+
+  return res.status(200).json(filteredProducts);
 };
 
 const removeProductFromReceipt = async (req: Request, res: Response) => {
